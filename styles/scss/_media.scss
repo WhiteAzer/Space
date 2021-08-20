@@ -1,0 +1,541 @@
+@include med(1250px) {
+    .footer__links {
+        margin-right: 10px;
+    }
+}
+
+@include med(1160px) {
+    .title {
+        text-align: left;
+        padding-left: 15%;
+    }
+
+
+    .about {
+        text-align: center;
+
+        &__item {
+            display: block;  
+        }
+        
+        &__img {
+            display: block;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        &__content {
+            width: 100%;
+            display: block;
+
+            &-text {
+                width: 90%;
+                margin: 50px auto;
+
+                p {
+                    width: 100%;
+                }
+            }
+            
+            
+        }
+
+        &__table {
+            width: 100%;
+        }
+    }
+}
+
+@include med(1140px) {
+    .to-book {
+        background-position: top left;
+
+        &__inner {
+        display: block;
+        }
+
+        &__text {
+            width: 95%;
+            margin: 0 0 30px 5% !important;
+        }
+    }
+}
+
+@include med(1050px) {
+    .special-offer {
+        &__inner {
+            display: block;
+        }
+
+        &__item {
+            margin: auto;
+            width: 90%;
+        }
+
+        .button {
+            margin-bottom: 30px;
+        }
+    }
+
+    .contacts {
+        .title {
+            padding-top: 10px;
+        }
+
+        &__text {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        &__inner {
+            display: block;
+        }
+
+        &__box {
+            margin: auto;
+        }
+
+        .buttom {
+            margin-top: 40px;
+        }
+
+        &__guarantees {
+            margin: auto;
+
+            .title {
+                padding-top: 50px;
+            }
+
+            &-text {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@include med(1024px) {
+    .login {
+        margin-right: 0;
+    }
+}
+
+@include med(895px) {
+    .header {
+        padding-top: 30px;
+    }
+
+    .menu {
+
+        &__btn {
+            display: block;
+            width: 40px;
+            height: 40px;
+
+            span {
+                display: block;
+                height: 2px;
+                background-color: #FFFFFF;
+
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        &__list {
+            transform: translateY(-150%);
+            transition: all .5s;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $contactsBg;
+            padding-top: 90px;
+            padding-bottom: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .active {
+            transform: translateY(0);
+        }
+
+        &__item {
+            padding: 15px 0;
+            margin-right: 0 !important;
+        }
+
+        &__link {
+            display: block;
+        }
+    }
+
+    .home-page {
+        &__content {
+            margin: 0 auto;
+        }
+
+        &__description {
+            margin: auto;
+        }
+    }
+
+    .how-to {
+        &__box {
+            display: none;
+
+            &-list {
+                display: block;
+                list-style: none;
+                width: 90%;
+                
+                &-item {
+                    padding-bottom: 20px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    position: relative;
+                    padding-left: 40px;
+
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #FFFFFF;
+                        margin-left: 5%;
+                        margin-right: 10px;
+                        left: -15px;
+                        top: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        &__inner {
+            display: block;
+        }
+
+        &__box-list {
+            width: 100%;
+            margin-bottom: 170px;
+        }
+
+        &__buttons {
+            max-width: 500px;
+            width: auto;
+            margin: auto;
+        }
+    }
+
+    .contacts__guarantees-img {
+        width: 250px;
+    }
+}
+
+@include med(720px) {
+    .title {
+        text-align: center;
+        padding: 50px 0;
+        font-size: 38px;
+        line-height: 28px;
+    }
+
+    .services {
+        padding-bottom: 50px;
+    }
+
+    .info {
+        padding-bottom: 50px;
+    }
+    
+    .slider {
+        &__inner {
+            padding: 0;
+        }
+
+        &__description {
+            font-size: 18px;
+            line-height: 24px;
+
+        }
+    }
+
+}
+
+@include med(620px) {
+
+    .home-page {
+        &__title {
+            font-size: 34px;
+            line-height: 30px;
+
+            span {
+                font-size: 60px;
+            }
+        }
+
+        &__text {
+            font-size: 18px;
+            justify-content: center;
+
+            p {
+                padding: 0 10px; 
+            }
+            
+        }
+
+        &__btn {
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            width: 60%;
+            border: 1px solid #FFFFFF;
+            padding: 15px 10px 16px;
+        }
+
+        &__description {
+            display: block;
+            text-align: center;
+
+            &-text {
+                width: 100%;
+                & + & {
+                    margin-left: 0;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .about {
+        &__item {
+            padding-bottom: 100px;
+        }
+
+        &__table-tr:first-child {
+            display: none;
+        }
+
+        &__table-td {
+            display: block;
+            text-align: right;
+            font-size: 24px;
+            font-weight: 400;
+            padding: 5px 10%;
+            
+            &:not(:last-child) {
+                border-bottom: 1px solid #FFFFFF;
+
+            }
+
+            span {
+                display: inline-block;
+            }
+
+            &::before {
+                content: attr(aria-label);
+                float: left;
+            }
+        }
+    }
+
+    .contacts {
+        &__box {
+            width: 90%;
+        }
+
+        &__text {
+            font-size: 17px;
+            margin-bottom: 40px;
+            margin-left: 5%;
+        }
+
+        &__form {
+            width: 90%;
+            margin: auto;
+        }
+
+        .button {
+            width: 80%;
+            font-size: 14px;
+            padding: 17px;
+            display: block;
+            margin: auto;
+        }
+
+        &__guarantees {
+            width: 90%;
+
+            &-text {
+                font-size: 17px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .footer {
+        font-size: 14px;
+
+        &__inner {
+            padding: 0 20px;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+
+        &__links {
+            margin-right: 0;
+        }
+
+        &__menu {
+            margin: 0;
+        }
+    }
+}
+
+@include med(480px) {
+    
+    .button {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .how-to__box-list-item {
+        padding-left: 15px;
+    }
+
+    .special-offer {
+        &__item-box {
+            min-height: 300px;
+            padding: 40px 10px;
+        }
+
+        &__item-text {
+            font-size: 20px;
+        }
+
+        &__new-price {
+            font-size: 34px;
+            line-height: 44px;
+        }
+
+    }
+
+    .services {
+        &__list-title {
+            font-size: 18px;
+        }
+
+        &__list {
+            font-size: 16px;
+
+            &-item::before {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+    .footer {
+        &__inner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__text {
+            width: 80%;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include med(360px) {
+    .button {
+        font-size: 14px;
+    }
+
+    .phone {
+        font-size: 20px;
+    }
+
+    .home-page {
+        &__title {
+            font-size: 28px;
+
+            span {
+                font-size: 42px;
+            }
+        }
+
+        &__btn {
+            font-size: 16px;
+            width: 90%;
+        }
+    }
+
+    .about {
+        &__table-td {
+            padding: 5px;
+        }
+    }
+
+    .to-book {
+        .title {
+            font-size: 26px;
+        }
+    }
+
+    .services {
+        .title {
+            font-size: 24px;
+        }
+    }
+
+    .slider{
+        &__arrow {
+
+            &-right {
+                right: 7px;
+            }
+    
+            &-left {
+                left: 7px;
+            }
+        }
+
+        &__description {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    .contacts {
+        &-text {
+            font-size: 12px;
+        }
+
+        &__guarantees {
+            &__text {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            &-img {
+                width: 200px;
+            }
+        }
+    }
+}
+

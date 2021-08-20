@@ -1,0 +1,19 @@
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin med($_maxWidth) {
+    @media (max-width: $_maxWidth) {
+        @content;
+    }
+}
